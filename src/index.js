@@ -7,7 +7,7 @@ const input = document.querySelector('.searchBar');
 const submit = document.querySelector('.add');
 const slider = document.querySelector('.toggleF');
 const img = document.querySelector('.weatherImg');
-const body = document.querySelector('body');
+// const body = document.querySelector('body');
 
 async function getWeather(location) {
     const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + location + '&units=metric&appid=d3038b3303b62168dd448fbeb4531d41', { mode: 'cors' });
@@ -65,3 +65,22 @@ async function getSticker(search) {
         console.log(error);
     }
 }
+
+submit.addEventListener('click', () => {
+    getWeather(input.value)
+});
+
+input.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        submit.click();
+    }
+});
+
+input.addEventListener('click', () => {
+    input.value = ''
+});
+
+slider.addEventListener('click', () => {
+    toggleFarenheight();
+})
