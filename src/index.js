@@ -41,7 +41,7 @@ async function toggleFarenheight() {
 
 const buildPage = (place, t, description, humid, max) => {
     description = description.chartAt(0).toUpperCase() + description.slice(1);
-    cityName.textContent = description;
+    cityName.textContent = place;
     weatherCondition.textContent = description;
     temperature.textContent = Math.round(t);
     maximum.textContent = "Today's high: " + Math.round(max) + '°';
