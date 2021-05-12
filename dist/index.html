@@ -4,19 +4,44 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="shortcut icon" href="./weather.ico" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Weather-App!</title>
   </head>
   <body>
-    <h1>Check Weather of your Fav City!</h1>
-    <img src="" alt="">
-    <script>
-        const img = document.querySelector('img');
-        fetch()
-    </script>
+    <div class="search">
+      <span class="add">🔍</span>
+      <input type="text" class="searchBar" value="Search Weather of your Fav City...">
+    </div>
+    <div class="container">
+      <div class="weatherInfo">
+        <div class="card-top">
+          <span class="weatherCondition"></span>
+          <h1 class="city"></h1>
+        </div>
+        <div class="card-left">
+          <span class="temp"></span>
+          <div class="cardRight">
+            <span class="tempMaximum"></span>
+            <span class="humidity"></span>
+          </div>
+        </div>
+
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" class="toggleF">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="gify">
+        <img src="#" alt="" class="weatherImage">
+      </div>
+    </div>
+    
     <script src="main.js"></script>
   </body>
 </html>
