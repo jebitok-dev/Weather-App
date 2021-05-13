@@ -8,12 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Weather-App!</title>
   </head>
   <body>
     <div class="search">
       <span class="add">🔍</span>
-      <input type="text" class="searchBar" value="Search Weather of your Fav City...">
+      <input type="text" class="searchBar" value="Search Your Fav City...">
     </div>
     <div class="container-p">
       <button class='dark-mode-button top-dark-mode-button' aria-label='dark mode toggle'>
@@ -28,7 +29,9 @@
         </div>
         <div class="card-left">
           <span class="temperature"></span>
-          <div class="cardRight">
+          <span class="degree">°C</span>
+          <div class="card-right">
+            <span class="feelsLike"></span>
             <span class="tempMaximum"></span>
             <span class="humidity"></span>
           </div>

@@ -96,7 +96,7 @@ span {
   text-align: left;
 }
 
-.weatherConditions {
+.weatherCondition {
   font-size: 1.5rem;
 }
 
@@ -109,6 +109,13 @@ span {
 .add:hover,
 .add:focus {
   transform: scale(1.2) rotate(-4deg);
+}
+
+.degree {
+  font-size: 2rem;
+  position: absolute;
+  top: 2%;
+  left: 17%;
 }
 
 .toggle {
@@ -195,12 +202,19 @@ input:checked + .slider:before {
     width: 80vw;
   }
 
+  .degree {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+  }
+
   .gify {
     position: static;
     margin-top: 50%;
   }
 
-  .temp {
+  .temperature {
     font-size: 6em;
     text-align: left;
   }
