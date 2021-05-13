@@ -6,7 +6,7 @@ This project tests the knowledge about asynchronous communication with promises 
 ## Built With
 
 - JavaScript
-- OpenWeatherAPI
+- OpenWeatherMap API
 
 ## Getting Started
 
