@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./image/weather.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather-App!</title>
+  </head>
+  <body>
+    <div class="search">
+      <span class="add">🔍</span>
+      <input type="text" class="searchBar" value="Search Your Fav City...">
+    </div>
+    <div class="container-p">
+      <button class='dark-mode-button top-dark-mode-button' aria-label='dark mode toggle'>
+        <span aria-hidden='true' class='dark-toggle'>
+          <span class='DTspan'></span>
+        </span>
+      </button>
+      <div class="weatherInfo">
+        <div class="card-top">
+          <span class="weatherCondition"></span>
+          <h1 class="city"></h1>
+        </div>
+        <div class="card-left">
+          <span class="temperature"></span>
+          <span class="degree">°C</span>
+          <div class="card-right">
+            <span class="feelsLike"></span>
+            <span class="tempMaximum"></span>
+            <span class="humidity"></span>
+          </div>
+        </div>
+
+        <div class="toggle">
+          <label class="switch">
+            <input type="checkbox" class="toggleF">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="gify">
+        <img src="#" alt="" class="weatherImg">
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

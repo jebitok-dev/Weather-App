@@ -6,12 +6,11 @@ This project tests the knowledge about asynchronous communication with promises 
 ## Built With
 
 - JavaScript
+- OpenWeatherMap API
 
 ## Getting Started
 
 ### Prerequisites
-
-To get this project up and running locally, you must already have ruby and rails plus the necessary gems installed on your computer
 
 **simple steps set up on your local machine**
 
@@ -21,7 +20,7 @@ To get this project up and running locally, you must already have ruby and rails
 - Run `cd Weather-App`
 ```
 
-<!-- - [Live Version](https://todo-list-vjs.netlify.app/) -->
+- [Live Version](https://weather-app-async.netlify.app/)
 
 <!-- ### Run Tests -->
 
